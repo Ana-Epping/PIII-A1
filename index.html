@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <title>Olá</title>
+</head>
+<body>
+    <h1>Faça sua soma aqui!</h1>
+    <p>Informe um número: </p>
+    <input id="num1" type="number">
+    <br/>
+    <p>Informe outro número: </p>
+    <input id="num2" type="number">
+    <br/>
+    <br/>
+    <button onclick="soma()">Somar</button>
+
+</body>
+<script>
+    function soma() {
+        let num1 = parseInt(document.getElementById('num1').value);
+        let num2 = parseInt(document.getElementById('num2').value);
+        
+        let sum = num1 + num2;
+        alert("A soma é " + sum)
+    }
+</script>
+</html>
